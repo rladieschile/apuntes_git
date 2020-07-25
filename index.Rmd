@@ -12,6 +12,8 @@ description: "Este es un libro que compila experiencias, apuntes y materiales en
 
 # Sobre el proyecto
 
-Queremos compilar apuntes y experiencias de las personas que asistieron a las sessiones del Club de Lectura de Happy git with R. 
+Queremos compilar apuntes y experiencias de las personas que asistieron a las sessiones del Club de Lectura de [Happy Git with R](https://happygitwithr.com/) de Jenny Bryan organizado por los capítulos de R Ladies en Chile (Santiago, Valparaíso y Concepción).
+
+![](img/club-de-lectura.png)
 
 Pasos para colaborar:
