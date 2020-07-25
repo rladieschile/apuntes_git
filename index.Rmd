@@ -1,0 +1,17 @@
+--- 
+title: "Libro de Apuntes Git"
+author: "R Ladies Chile"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Este es un libro que compila experiencias, apuntes y materiales en español del club de lectura de Happy Git with R"
+---
+
+# Sobre el proyecto
+
+Queremos compilar apuntes y experiencias de las personas que asistieron a las sessiones del Club de Lectura de Happy git with R. 
+
+Pasos para colaborar:
