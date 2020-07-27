@@ -1,2 +1,26 @@
 # Introducción a Git {#intro}
 
+Jenny Bryan señala que Git es un sistema de control de versiones. Ahora bien ¿Qué es un sistema de control de versiones?
+
+Un sistema de control de versiones (Version Control System -VCS) es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.
+
+Es fácil ententerlo como una máquina de tiempo que te ofrece la información registrada de tus decisiones en el pasado. Es como una fotografía que registra el estado de tus archivos en un determinado momento. Son como una serie de cuadros fotográficas que en conjunto van formando la historia de tu proyecto.
+
+Un VCS registra todos los cambios realizados en un archivo a lo largo del tiempo o trayectoria de trabajo de un proyecto determinado
+
+**NADA DE LO QUE SE HACE SE PIERDE Y TODO SE PUEDE ARREGLAR**
+
+Originalmente, el VCS se creó con el propósito de ayudar a los grupos de desarrolladores que trabajaban colaborativamente en grandes proyectos de software. De esta manera, git administra la evolución de un conjunto de archivos altamente estructurados llamados **repositorios**  --- Jenny Bryann. 
+
+En la actualidad, git se usa como fuente de código para el manejo de archivos de la comunidad de ciencia de datos donde se administran variados tipos de archivos como datos, figuras y reportes. --- Jenny Bryann
+
+Este sistema de control de versiones trabaja a través de tres pasos básicos:
+
+* Modificación: cuando trabajamos con git nuestros archivos pueden ser rastreados o no rastreados. Los archivos rastreados son parte de las instantáneas que forman la historia del proyecto. En este sentido, un archivo es rastreado cuando comienza la primera etapa. Esta etapa es la modificación. La etapa de modificación, significa que se ha hecho algún cambio en el archivo, pero que aún no hemos comprometido ese cambio. Una vez que el modificado el archivo, git lo organiza y lo deja en estado **"organizado"** o **"staged"**.
+
+La modificación o el cambio podría ser adicionado, modificado o eliminado de los contenidos del archivo. Git nota en cualquier tiempo si modificamos nuestros archivos. Pero, no siempre queremos almacenar cualquier cambio hasta que los adicionemos al área de **"staging área"**
+
+* Almacenamiento u organización de los cambios: cuando se organizan los cambios, nuestos archivos modificados se convierten en archivos organizados (stage files). En otras palabras, los cambios a esos archivos están listos para ser comprometidos (**commited**) al proyecto. Todos los archivos que están organizados serán parte de la próxima instantánea que tomemos en algún momento de la historia del proyecto.
+
+* Compromiso del cambio: una vez que los cambios de un archivo están organizados y almacenados en el git, entonces están listos para ser comprometidos o están listos para hacer **commit**. De esta manera, colaboramos con otros desarrlladors y otros compañeros de equipo en un mismo proyecto. 
+
