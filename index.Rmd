@@ -7,7 +7,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura de Happy Git with R"
+description: "Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro 'Happy Git with R'"
 ---
 
 # Sobre el proyecto
