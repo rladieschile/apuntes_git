@@ -1,9 +1,3 @@
 [
-["index.html", "Libro de Apuntes Git Capítulo 1 Sobre el proyecto", " Libro de Apuntes Git R Ladies Chile 2020-07-25 Capítulo 1 Sobre el proyecto Queremos compilar apuntes y experiencias de las personas que asistieron a las sessiones del Club de Lectura de Happy Git with R de Jenny Bryan organizado por los capítulos de R Ladies en Chile(Santiago, Valparaíso y Concepción). Pasos para colaborar: "],
-["intro.html", "Capítulo 2 Introducción a Git", " Capítulo 2 Introducción a Git "],
-["basicos.html", "Capítulo 3 Comandos básicos de Git", " Capítulo 3 Comandos básicos de Git "],
-["instalacion.html", "Capítulo 4 Instalar y conectar Git, GitHub y RStudio", " Capítulo 4 Instalar y conectar Git, GitHub y RStudio "],
-["flujos-de-trabajo.html", "Capítulo 5 Flujos de trabajo colaborativo", " Capítulo 5 Flujos de trabajo colaborativo "],
-["ejercicios.html", "Capítulo 6 Ejercicios", " Capítulo 6 Ejercicios "],
-["materiales.html", "Capítulo 7 Materiales de interés", " Capítulo 7 Materiales de interés "]
+["index.html", "Libro de Apuntes Git Capítulo 1 Sobre el proyecto", " Libro de Apuntes Git R Ladies Chile 2020-07-28 Capítulo 1 Sobre el proyecto Queremos compilar apuntes y experiencias en español de las personas que asistieron a las sesiones del Club de Lectura de Happy Git with R de Jenny Bryan organizado por los capítulos de R Ladies en Chile (Santiago, Valparaíso y Concepción) entre junio y julio de 2020. También queremos que este libro de apuntes se transforme en el primer espacio de colaboración en GitHub para las personas que asistieron, en un ambiente apto para dudas y equivocaciones :) Pasos para colaborar: "]
 ]
