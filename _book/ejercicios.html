@@ -5,26 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 6 Ejercicios | Libro de Apuntes Git</title>
-  <meta name="description" content="Este es un libro que compila experiencias, apuntes y materiales en español del club de lectura de Happy Git with R" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="description" content="Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro ‘Happy Git with R’" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 6 Ejercicios | Libro de Apuntes Git" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del club de lectura de Happy Git with R" />
+  <meta property="og:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro ‘Happy Git with R’" />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Capítulo 6 Ejercicios | Libro de Apuntes Git" />
   
-  <meta name="twitter:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del club de lectura de Happy Git with R" />
+  <meta name="twitter:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro ‘Happy Git with R’" />
   
 
 <meta name="author" content="R Ladies Chile" />
 
 
-<meta name="date" content="2020-07-25" />
+<meta name="date" content="2020-07-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -74,7 +74,9 @@
 <li class="chapter" data-level="3" data-path="basicos.html"><a href="basicos.html"><i class="fa fa-check"></i><b>3</b> Comandos básicos de Git</a></li>
 <li class="chapter" data-level="4" data-path="instalacion.html"><a href="instalacion.html"><i class="fa fa-check"></i><b>4</b> Instalar y conectar Git, GitHub y RStudio</a></li>
 <li class="chapter" data-level="5" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html"><i class="fa fa-check"></i><b>5</b> Flujos de trabajo colaborativo</a></li>
-<li class="chapter" data-level="6" data-path="ejercicios.html"><a href="ejercicios.html"><i class="fa fa-check"></i><b>6</b> Ejercicios</a></li>
+<li class="chapter" data-level="6" data-path="ejercicios.html"><a href="ejercicios.html"><i class="fa fa-check"></i><b>6</b> Ejercicios</a><ul>
+<li class="chapter" data-level="6.1" data-path="ejercicios.html"><a href="ejercicios.html#ejercicio-fork-sin-usethis"><i class="fa fa-check"></i><b>6.1</b> Ejercicio FORK (sin <code>usethis</code>)</a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="materiales.html"><a href="materiales.html"><i class="fa fa-check"></i><b>7</b> Materiales de interés</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Libro realizado con Bookdown</a></li>
@@ -98,7 +100,25 @@
             <section class="normal" id="section-">
 <div id="ejercicios" class="section level1">
 <h1><span class="header-section-number">Capítulo 6</span> Ejercicios</h1>
+<div id="ejercicio-fork-sin-usethis" class="section level2">
+<h2><span class="header-section-number">6.1</span> Ejercicio FORK (sin <code>usethis</code>)</h2>
+<p>Gato tiene en su cuenta de GitHub un repositorio llamado <strong>mi_repo_genial</strong> y Perro ha visto este repositorio y quiere colaborar.</p>
+<p><strong>Proceso de colaboración:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Perro debe ir a <strong>Gato/mi_repo_genial</strong> y presionar el botón de fork.</p></li>
+<li><p>Al hacer click en fork, Perro ha creado <strong>Perro/mi_repo_genial</strong>, el cual es una copia de <strong>Gato/mi_repo_genial</strong>.</p></li>
+<li><p>Si Perro quiere trabajar en los archivos en su computador debe llevar su copia que está en GitHub hacia su computador. Para esto puede usar <code>git clone</code> o “proyecto existente, GitHub primero” de la sección 16.</p>
+<p>3.1 Crear un nuevo proyecto de RStudio con control de versiones y Git y colocar como url: <strong>Perro/mi_repo_genial.git</strong> (este es el repo que esta en la cuenta de GitHub de Perro).</p></li>
+<li><p>Luego del proceso 3. Perro tiene los archivos de <strong>Gato/mi_repo_genial</strong> en su computador.</p></li>
+<li><p><strong>Perro/mi_repo_genial</strong> es un repositorio remoto de Perro. Perro puede verificarlo al escribir <code>git remote -v</code> en el terminal.</p></li>
+<li><p>Es necesario que Perro declare como remoto upstream el repositorio de Gato. Para eso puede usar: <code>git remote add upstream http://github.com/Gato/mi_repo_genial.git</code></p></li>
+<li><p>Para saber que todo está bien. Perro puede verificar que ahora tiene dos archivos remotos. Para esto puede usar: <code>git remote -v</code> en la terminal.</p></li>
+<li><p>Antes de empezar a modificar los archivos y agregar sus contribuciones Perro debe crear una nueva rama (recuerda que es recomendable no trabajar contribuciones desde la rama master). Perro puede escribir en la terminal <code>git branch rama-perro</code>.</p></li>
+<li><p>Ahora Perro puede modificar los archivos, hacer commit y push al remoto <strong>Perro/mi_repo_genial</strong> y hacer pull request para agregar los cambios a <strong>Gato/mi_repo_genial</strong>. Para esto puede usar su método favorito: desde la pestaña Git de Rstudio o desde la terminal usando: <code>git push &lt;remote&gt; &lt;branch&gt;</code>.</p></li>
+<li><p>Perro debe recordar que mañana cuando empiece a trabajar nuevamente en el repositorio, debe actualizar el remoto upstream haciendo pull. Para esto puede escribir en la terminal <code>git pull upstream master --ff-only</code>.</p></li>
+</ol>
 
+</div>
 </div>
             </section>
 
