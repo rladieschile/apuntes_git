@@ -74,7 +74,9 @@
 <li class="chapter" data-level="3" data-path="basicos.html"><a href="basicos.html"><i class="fa fa-check"></i><b>3</b> Comandos básicos de Git</a></li>
 <li class="chapter" data-level="4" data-path="instalacion.html"><a href="instalacion.html"><i class="fa fa-check"></i><b>4</b> Instalar y conectar Git, GitHub y RStudio</a></li>
 <li class="chapter" data-level="5" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html"><i class="fa fa-check"></i><b>5</b> Flujos de trabajo colaborativo</a></li>
-<li class="chapter" data-level="6" data-path="ejercicios.html"><a href="ejercicios.html"><i class="fa fa-check"></i><b>6</b> Ejercicios</a></li>
+<li class="chapter" data-level="6" data-path="ejercicios.html"><a href="ejercicios.html"><i class="fa fa-check"></i><b>6</b> Ejercicios</a><ul>
+<li class="chapter" data-level="6.1" data-path="ejercicios.html"><a href="ejercicios.html#ejercicio-fork-sin-usethis"><i class="fa fa-check"></i><b>6.1</b> Ejercicio FORK (sin <code>usethis</code>)</a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="materiales.html"><a href="materiales.html"><i class="fa fa-check"></i><b>7</b> Materiales de interés</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Libro realizado con Bookdown</a></li>
@@ -98,6 +100,22 @@
             <section class="normal" id="section-">
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">Capítulo 2</span> Introducción a Git</h1>
+<p>Jenny Bryan señala que Git es un sistema de control de versiones. Ahora bien, ¿qué es un sistema de control de versiones?</p>
+<p>Un sistema de control de versiones (Version Control System -VCS) es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.</p>
+<p>Es fácil entenderlo como una máquina de tiempo que te ofrece la información registrada de tus decisiones en el pasado. Es como una fotografía que registra el estado de tus archivos en un determinado momento. Son como una serie de cuadros fotográficas que en conjunto van formando la historia de tu proyecto.</p>
+<p>Un VCS registra todos los cambios realizados en un archivo a lo largo del tiempo o trayectoria de trabajo de un proyecto determinado</p>
+<p><strong>NADA DE LO QUE SE HACE SE PIERDE Y TODO SE PUEDE ARREGLAR</strong></p>
+<p>Originalmente, el VCS se creó con el propósito de ayudar a los grupos de desarrolladores que trabajaban colaborativamente en grandes proyectos de software. De esta manera, git administra la evolución de un conjunto de archivos altamente estructurados llamados <strong>repositorios</strong> — Jenny Bryan.</p>
+<p>En la actualidad, git se usa como fuente de código para el manejo de archivos de la comunidad de ciencia de datos donde se administran variados tipos de archivos como datos, figuras y reportes. — Jenny Bryan</p>
+<p>Este sistema de control de versiones trabaja a través de tres pasos básicos:</p>
+<ul>
+<li>Modificación: cuando trabajamos con git nuestros archivos pueden ser rastreados o no rastreados. Los archivos rastreados son parte de las instantáneas que forman la historia del proyecto. En este sentido, un archivo es rastreado cuando comienza la primera etapa. Esta etapa es la modificación. La etapa de modificación, significa que se ha hecho algún cambio en el archivo, pero que aún no hemos comprometido ese cambio. Una vez que el modificado el archivo, git lo organiza y lo deja en estado <strong>“organizado”</strong> o <strong>“staged”</strong>.</li>
+</ul>
+<p>La modificación o el cambio podría ser adicionado, modificado o eliminado de los contenidos del archivo. Git nota en cualquier tiempo si modificamos nuestros archivos. Pero, no siempre queremos almacenar cualquier cambio hasta que los adicionemos al área de <strong>“staging área”</strong></p>
+<ul>
+<li><p>Almacenamiento u organización de los cambios: cuando se organizan los cambios, nuestos archivos modificados se convierten en archivos organizados (stage files). En otras palabras, los cambios a esos archivos están listos para ser comprometidos (<strong>commited</strong>) al proyecto. Todos los archivos que están organizados serán parte de la próxima instantánea que tomemos en algún momento de la historia del proyecto.</p></li>
+<li><p>Compromiso del cambio: una vez que los cambios de un archivo están organizados y almacenados en el git, entonces están listos para ser comprometidos o están listos para hacer <strong>commit</strong>. De esta manera, colaboramos con otros desarrolladores y otros compañeros de equipo en un mismo proyecto.</p></li>
+</ul>
 
 </div>
             </section>
