@@ -5,26 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 5 Flujos de trabajo colaborativo | Libro de Apuntes Git</title>
-  <meta name="description" content="Este es un libro que compila experiencias, apuntes y materiales en español del club de lectura de Happy Git with R" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="description" content="Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro ‘Happy Git with R’" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 5 Flujos de trabajo colaborativo | Libro de Apuntes Git" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del club de lectura de Happy Git with R" />
+  <meta property="og:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro ‘Happy Git with R’" />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Capítulo 5 Flujos de trabajo colaborativo | Libro de Apuntes Git" />
   
-  <meta name="twitter:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del club de lectura de Happy Git with R" />
+  <meta name="twitter:description" content="Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro ‘Happy Git with R’" />
   
 
 <meta name="author" content="R Ladies Chile" />
 
 
-<meta name="date" content="2020-07-25" />
+<meta name="date" content="2020-08-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -73,7 +73,12 @@
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción a Git</a></li>
 <li class="chapter" data-level="3" data-path="basicos.html"><a href="basicos.html"><i class="fa fa-check"></i><b>3</b> Comandos básicos de Git</a></li>
 <li class="chapter" data-level="4" data-path="instalacion.html"><a href="instalacion.html"><i class="fa fa-check"></i><b>4</b> Instalar y conectar Git, GitHub y RStudio</a></li>
-<li class="chapter" data-level="5" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html"><i class="fa fa-check"></i><b>5</b> Flujos de trabajo colaborativo</a></li>
+<li class="chapter" data-level="5" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html"><i class="fa fa-check"></i><b>5</b> Flujos de trabajo colaborativo</a><ul>
+<li class="chapter" data-level="5.1" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html#los-hipervínculos-hyperlinks-son-increíbles"><i class="fa fa-check"></i><b>5.1</b> ¡Los hipervínculos (hyperlinks) son increíbles!</a></li>
+<li class="chapter" data-level="5.2" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html#examinar-el-historial-de-commits"><i class="fa fa-check"></i><b>5.2</b> Examinar el historial de commits</a></li>
+<li class="chapter" data-level="5.3" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html#consultas-basadas-en-archivos"><i class="fa fa-check"></i><b>5.3</b> Consultas basadas en archivos</a></li>
+<li class="chapter" data-level="5.4" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html#buscar-información-en-github"><i class="fa fa-check"></i><b>5.4</b> Buscar información en GitHub</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="ejercicios.html"><a href="ejercicios.html"><i class="fa fa-check"></i><b>6</b> Ejercicios</a></li>
 <li class="chapter" data-level="7" data-path="materiales.html"><a href="materiales.html"><i class="fa fa-check"></i><b>7</b> Materiales de interés</a></li>
 <li class="divider"></li>
@@ -98,7 +103,57 @@
             <section class="normal" id="section-">
 <div id="flujos_de_trabajo" class="section level1">
 <h1><span class="header-section-number">Capítulo 5</span> Flujos de trabajo colaborativo</h1>
+<p><strong>Traducción del capítulo 29 “Time travel: See the past” del libro de “Happy Git with R” de Jenny Bryan</strong></p>
+<p>A veces necesitarás volver a revisar varios documentos de tu proyecto, debido a que lo que buscas esta bastantes atrás. Por ejemplo:
+- “Me gusto más la paleta de colores que usamos en la visualización la semana pasada”
+- “¿Qué paso que tenemos un outlier en la figura nº2?”
+- “No esta funcionando correctamente en Windows hace dos semanas”
+Seguramente para resolver todos estos problemas, tendrás que viajar en el tiempo al pasado de tus archivos y bases de datos.</p>
+<div id="los-hipervínculos-hyperlinks-son-increíbles" class="section level2">
+<h2><span class="header-section-number">5.1</span> ¡Los hipervínculos (hyperlinks) son increíbles!</h2>
+<p>Esta es una de las funciones con la que GitHub (y GitLab o BitBucket) realmente destacada. Podemos rapidamente explorar diferentes commits/states, cambiar entre branches, inspeccionar documentos individuales, y revisar la discusión entre issues, lo que lo hace una herramienta increiblemente poderosa.</p>
+<p>Sí, tecnicamente, puedes visitar todos los pasados states de tu proyecto usando los comandos de Git localmente; pero esa opción es significamente más incomoda de realizar. Para eso, en general, tienes que revisar states antigüos, lo que acrecienta la probabilidad de cómeter algún error agregando modificaciones en la incorrrecta branch (rama).</p>
+<p>El trabajo con los hypelinks de GitHub en tu repositorio e historial es una de las principales razones para realizar la sincronización del trabajo local con un copia en GitHub. Dado a que claramente involucra acciones remotas y de solo lectura, no hay posibilidades de comprometer un nuevo trabajo en la rama equivocada.</p>
+</div>
+<div id="examinar-el-historial-de-commits" class="section level2">
+<h2><span class="header-section-number">5.2</span> Examinar el historial de commits</h2>
+<p>Para ingresar al historial de commits, haz click a la izquierda en el boton llamado “xyz commits” (cómo se ve en la imagen nº1). Cada repositorio contará con un número distinto en donde esta “xyz”, que corresponderá al número total de commits realizados en el pasado. Según el cliente del local Git, al hacer click incluso podrás visualizar una descripción gráfica del historial.</p>
+<p><strong>Imagen nº1: Acceso al historial de todos los commits ya realizados.</strong>
+<img src="img/5.4.imagen1.png" /></p>
+<p>Al ingresar al historial de los commits, tendrás tres formas de obtener más información sobre cada commit en específico:</p>
+<ol style="list-style-type: decimal">
+<li><p>Usando el icono de un portapapeles (o clipboard) copias el SHA-1 del commit. Al hacer eso, facilita que puedas hacer referencia a este en otros medios o documentos. Por ejemplo, puedes usarlo para hacer referencia a ese commit en específico en un issue o una conversación sobre ello.</p></li>
+<li><p>Haz click en el SHA-1 abreviado para ver las diferencias asociadas con el commit. El SHA-1 abreviado son los números y letras juntos a la derecha.</p></li>
+<li><p>Haz click en los brackets dobles &lt;&gt; para revisar el estado del repositorio completo en ese momento.</p></li>
+</ol>
+<p><strong>Imagen 2: Ejemplo sobre cómo ver los detalles de cada commit en específico.</strong>
+<img src="img/5.4.imagen2.png" /></p>
+<p>Para volver a la página principal del repositorio, solo haz click en YOU/REPO que aparece arriba a la izquierda. De esa forma, irás de regreso al estado actual del repositorio.</p>
+<p>Una vez que identifiques el commit (o diff o file state) que buscabas, puedes copiar el URL de la web, y usarlo para promover la discusión online en otro lado. De esta forma, por ejemplo, puedes atraer a otras personas a la vista exacta del repositorio. Este uso de los hyperlinks puede hacer que la discussión online sea mucho más precisa y eficiente.</p>
+</div>
+<div id="consultas-basadas-en-archivos" class="section level2">
+<h2><span class="header-section-number">5.3</span> Consultas basadas en archivos</h2>
+<p>¿Qué pasa si estas interesado/a por cómo un archivo específico llego a ser cómo es? Entonces lo que tienes que hacer es ir al archivo de tu interés, y localizar los botones “Blame” y “History” en la esquina superior derecha (ver imagen nº3)</p>
+<p><strong>Imagen 3: Cómo revisar más detalles de documento (file) específico en GitHub.</strong>
+<img src="img/5.4.imagen3.png" /></p>
+<p><strong>“Blame”:</strong> Esta visión del archivo esta relacionado con ciertos detalles sobre el origen de las líneas de comando. Te mostrará quién modificó por última vez cada línea del archivo, hace cuanto tiempo y el mensaje de confirmación asociado a ello. Haz click en el mensaje del commit para ver ese commit. O puedes hacer click en el icono con forma de rectángulos apilados para retrocede más en el tiempo, siguiendo en la forma de verlo desde “Blame”. Puede ser útil para cuando se hace un análisis del proceso en un conjunto específico y pequeño de las líneas de comando.</p>
+<p><strong>“History”:</strong> Al ver en el “history” de un archivo, podrás visibilizar los commits que afectan el archivo de interés. Esto lo verás de forma muy similar al historial completo de commits visto anteriormente. Este boton es útil para cuando estas intentando comprender algo medio difuso, y este historial ayuda a tener un marco general de la historia del archivo.</p>
+<p><strong>Hyperlinks a una línea específica en una fecha específica</strong></p>
+<p>Cuando estes viendo un documento (file) en GitHub, puedes hacer clikc en el número de una línea para destacarlo. Usa “click … shift-click” para seleccionar un rango de líneas. Un ejemplo de esto entregado por Jenny Bryan, lo encuentras en el siguiente link:</p>
+<pre><code>https://github.com/OWNER/REPO/blob/SHA/path/to/file.R#L27-L31</code></pre>
+<p>Si el URL no contiene el SHA, escribe “y” para alternar en esa forma.</p>
+<p>El uso de estas URL y SHA específicos son una excelente forma de indicar a otras personas unas líneas de código en particular durante conversaciones en línea. Si puedes, y cómo buena práctica, usa los links más feos que contienen el SHA, ya que estos resistirán el paso del tiempo.</p>
+</div>
+<div id="buscar-información-en-github" class="section level2">
+<h2><span class="header-section-number">5.4</span> Buscar información en GitHub</h2>
+<p>Para realizar cualquier búsqueda, Github cuenta siempre con el buscador en la esquina izquierda superior (ver imagen nº4).</p>
+<p><strong>Imagen 4: Barra de búsqueda de GitHub.</strong>
+<img src="img/5.4.imagen4.png" /></p>
+<p>Una vez que ingreses un texto en la barra de búsqueda, un menú se desplega, entregandote la opción de buscar en el respositorio actual (el predeterminado) o en todo GitHub. Lo que hace GitHub es buscar en los contenidos de los documentos (files o descritos cómo “codes”), mensajes de commits y en los issues. Por lo cual puedes tomar ventaja de los resultados de búsqueda en estos diferentes dominios. Esta herramienta permite un preciso acercamiento a las líneas de códigos, volver a visitar un momento específico en el historial del proyecto de tu interes, o volver a descubrir una conversación.</p>
+<p><strong>Búsqueda sobre un Issue específico</strong></p>
+<p>Si lo que necesitas es buscar sobre un issue específico, entonces en el cuadro de búsqueda de cualquier página con los issues de un repositorio, escribe primero los filtros is:issue o is:open.</p>
 
+</div>
 </div>
             </section>
 
