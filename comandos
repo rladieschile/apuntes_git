@@ -1,0 +1,19 @@
+CONSOLE
+
+rmarkdown::render_site(encoding = "UTF-8")
+
+TERMINAL
+
+git add .
+
+git add -A
+
+git commit -m "Modificacion21"
+
+git push origin master
+
+git remote -v
+
+git remote set-url origin https://github.com/Daniel795-lab/GranitosdeMostaza.github.io.git
+
+git remote set-url upstream https://github.com/GranitosdeMostaza/GranitosdeMostaza.github.io.git
