@@ -21,3 +21,5 @@ git remote set-url upstream https://github.com/GranitosdeMostaza/GranitosdeMosta
 git remote add upstream http://github.com/Gato/mi_repo_genial.git
 
 git push https://github.com/Daniel795-lab/apuntes_git.git Daniel
+
+git pull upstream master --ff-only
