@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 4 Instalar y conectar Git, GitHub y RStudio | Libro de Apuntes Git</title>
   <meta name="description" content="Este es un libro que compila experiencias, apuntes y materiales en español del Club de Lectura del libro ‘Happy Git with R’" />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 4 Instalar y conectar Git, GitHub y RStudio | Libro de Apuntes Git" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="R Ladies Chile" />
 
 
-<meta name="date" content="2020-08-03" />
+<meta name="date" content="2020-08-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,6 +50,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 
@@ -72,7 +73,12 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre el proyecto</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción a Git</a></li>
 <li class="chapter" data-level="3" data-path="basicos.html"><a href="basicos.html"><i class="fa fa-check"></i><b>3</b> Comandos básicos de Git</a></li>
-<li class="chapter" data-level="4" data-path="instalacion.html"><a href="instalacion.html"><i class="fa fa-check"></i><b>4</b> Instalar y conectar Git, GitHub y RStudio</a></li>
+<li class="chapter" data-level="4" data-path="instalacion.html"><a href="instalacion.html"><i class="fa fa-check"></i><b>4</b> Instalar y conectar Git, GitHub y RStudio</a><ul>
+<li class="chapter" data-level="4.1" data-path="instalacion.html"><a href="instalacion.html#crear-una-cuenta-en-github"><i class="fa fa-check"></i><b>4.1</b> Crear una cuenta en GitHub</a></li>
+<li class="chapter" data-level="4.2" data-path="instalacion.html"><a href="instalacion.html#instalar-o-actualizar-r-y-rstudio"><i class="fa fa-check"></i><b>4.2</b> Instalar (o actualizar) R y RStudio</a></li>
+<li class="chapter" data-level="4.3" data-path="instalacion.html"><a href="instalacion.html#instala-git"><i class="fa fa-check"></i><b>4.3</b> Instala Git</a></li>
+<li class="chapter" data-level="4.4" data-path="instalacion.html"><a href="instalacion.html#preséntate-a-git"><i class="fa fa-check"></i><b>4.4</b> Preséntate a Git</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html"><i class="fa fa-check"></i><b>5</b> Flujos de trabajo colaborativo</a><ul>
 <li class="chapter" data-level="5.1" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html#los-hipervínculos-hyperlinks-son-increíbles"><i class="fa fa-check"></i><b>5.1</b> ¡Los hipervínculos (hyperlinks) son increíbles!</a></li>
 <li class="chapter" data-level="5.2" data-path="flujos-de-trabajo.html"><a href="flujos-de-trabajo.html#examinar-el-historial-de-commits"><i class="fa fa-check"></i><b>5.2</b> Examinar el historial de <em>commits</em></a></li>
@@ -105,7 +111,121 @@
             <section class="normal" id="section-">
 <div id="instalacion" class="section level1">
 <h1><span class="header-section-number">Capítulo 4</span> Instalar y conectar Git, GitHub y RStudio</h1>
+<p><strong>Traducción de la información principal del capítulo 4 “Register a GitHub account”, capítulo 5 “Install or upgrade R and RStudio”, capítulo 6 “Install Git” y capítulo 7 “Introduce yourself to Git” del libro de “Happy Git with R” de Jenny Bryan</strong></p>
+<div id="crear-una-cuenta-en-github" class="section level2">
+<h2><span class="header-section-number">4.1</span> Crear una cuenta en GitHub</h2>
+<p>Crear una cuenta en GitHub es gratis y puedes hacerlo en la siguiente página web: <a href="https://github.com">https://github.com</a></p>
+<p><strong>Nombre (Username)</strong></p>
+<p>Para hacer tu cuenta necesitarás escoger un nombre (username), para lo cual Jenny Bryan recomienda considerar:</p>
+<ul>
+<li><p>¡Usa tu nombre! Así es más fácil de recordar y encontrarte.</p></li>
+<li><p>Re-usa el nombre de otros medios sociales cómo Twitter o Slack.</p></li>
+<li><p>Considera sentirte cómoda/o con el nombre (username), cómo para en un futuro mostrárselo a tu jefa/e.</p></li>
+<li><p>Un nombre corto es mejor que algo muy extenso.</p></li>
+<li><p>Haz que sea lo más único posible.</p></li>
+<li><p>Que no sea determinado por un periodo de tu vida. No uses tu universidad, trabajo o residencia, por ejemplo.</p></li>
+<li><p>Evita nombres que contengan palabras usadas normalmente en programación (como <code>NA</code>, que puede significar missing values).</p></li>
+<li><p>No uses letras mayúsculas para separar entre palabras. Si puedes, que todo tu nombre tenga solo minusculas y si quieres separar palabras, mejor usar los símbolos "_" o “-”.</p></li>
+</ul>
+<p>Puedes modificar el nombre (username) más tarde, pero es más fácil si lo haces bien a la primera. Si quisieras cambiarlo revisa estas páginas web:</p>
+<ul>
+<li><p><a href="https://help.github.com/articles/changing-your-github-username/" class="uri">https://help.github.com/articles/changing-your-github-username/</a></p></li>
+<li><p><a href="https://help.github.com/articles/what-happens-when-i-change-my-username/" class="uri">https://help.github.com/articles/what-happens-when-i-change-my-username/</a></p></li>
+</ul>
+<p><strong>Uso de repositorios gratuitos privados</strong></p>
+<p>GitHub te ofrece la opción ilimitada de repositorios privados para todos sus usuarios. Estos pueden soportar hasta tres colaboradores externos lo que lo hace perfecto para tus proyectos personales, entre otros.</p>
+<p>Para el caso de estudiantes y personal en las áreas de investigación y educación, para ello revisa: <a href="https://education.github.com">https://education.github.com</a></p>
+<p>Para organizaciones sin fines de lucro y fundaciones, revisa: <a href="https://github.com/nonprofit">https://github.com/nonprofit</a></p>
+<p><strong>Pagar por repositorios privados</strong></p>
+<p>Cualquiera puede pagar por tener repositorios privados que soportan un número ilimitado de colaboradores. Esto no necesitas hacerlo ahora ya que puedes en el futuro decidir comenzar a pagarlo. Más información <a href="https://github.com/pricing">https://github.com/pricing</a></p>
+</div>
+<div id="instalar-o-actualizar-r-y-rstudio" class="section level2">
+<h2><span class="header-section-number">4.2</span> Instalar (o actualizar) R y RStudio</h2>
+<ol style="list-style-type: decimal">
+<li>Para instalar R, lo puedes hacer en el siguiente enlace: <a href="https://cloud.r-project.org">https://cloud.r-project.org</a></li>
+</ol>
+<p>Si ya lo tienes instalado, quizás este es el momento perfecto para actualizarlo. Si quieres revisar qué versión estás usando, hazlo con:</p>
+<pre><code>R.version.string
+#&gt; [1] &quot;R version 4.0.0 (2020-04-24)&quot;</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Instala RStudio, y si ya lo tienes, quizás es el momento ideal también para actualizarlo. Descárgalo aquí: <a href="https://www.rstudio.com/products/rstudio/download/preview/">https://www.rstudio.com/products/rstudio/download/preview/</a></p></li>
+<li><p>Para actualizar los paquetes de R:</p></li>
+</ol>
+<pre><code>update.packages(ask = FALSE, checkBuilt = TRUE)</code></pre>
+</div>
+<div id="instala-git" class="section level2">
+<h2><span class="header-section-number">4.3</span> Instala Git</h2>
+<p>Para usar Git en la línea de comando y con RStudio, necesitas:</p>
+<p>1 .- Instalarlo.
+2.- Revisar si ya lo tienes instalado, si fuera así no necesitas seguir estos pasos.
+3.- Si no, a continuación están las formas de instalarlo según tu sistema operativo.</p>
+<p>Para saber si ya lo tienes instalado en tu computador, abre la terminal de tu computador e ingresa “which git”:</p>
+<pre><code>which git 
+## /usr/bin/git</code></pre>
+<p>Luego “git –version”, para saber que versión tienes:</p>
+<pre><code>git --version
+## git version 2.21.0</code></pre>
+<p>Si ves que a los comandos ingresados, obtienes cómo respuesta <code>git: command not found</code>, entonces considera instalar Git con los pasos que se describen más abajo.</p>
+<p>A los usuarios de macOS, suele mostrarles una oferta intermediaria para instalar las líneas de comando de estas herramientas. En esos casos, deberás aceptar, hacer click en “Instalar” y revisar los pasos que se detallan más abajo.</p>
+<p><strong>I. Instalar Git en Windows</strong></p>
+<p>Hay tres opciones:</p>
+<p><strong>Opción 1 (¡altamente recomendado!):</strong> Instala Git para Windows a través de esta web: <a href="https://gitforwindows.org">https://gitforwindows.org</a>. También es conocido como “msysgit” o “Git Bash” el cual instala también una consola (“bash shell”) y algunas otras herramientas útiles.</p>
+<p>Esta es buena opción, porque Git para Windows deja el ejecutable en una ubicación convencional lo que te ayudará a encontrarlo y usarlo. Esto también admite una transición a un uso más experto, especialmente cuando tengas que trabajar fuera de RStudio.</p>
+<ul>
+<li><p>¡OJO! considera que cuando te pregunte “Adjusting your PATH environment”, selecciona “Git from the command line and also from 3rd-party software”. Si no, siempre es bueno aceptar lo que viene por defecto.</p></li>
+<li><p>Considera que RStudio para Windows prefiere que instales Git dentro de “C:/Program/Files”, ruta que debe estar por defecto. Esto significa que, por ejemplo, Git estará en tu Windows en: “C:/Program/Files/Git/bin/git.exe”.</p></li>
+</ul>
+<p><strong>Opción 2:</strong> Instala Git para <a href="https://gitforwindows.org">Windows</a> desde el paquete <a href="https://chocolatey.org">“chocolatey”</a>.</p>
+<p>Entonces primero instala chocolatey en tu computador, luego agrega en tu terminal:</p>
+<pre><code>choco install git.install</code></pre>
+<p><strong>II. Instalar Git en macOS</strong></p>
+<p>Hay tres opciones también:</p>
+<p><strong>Opción 1 (¡altamente recomendado!):</strong> Instalar el comando Xcode (desde la línea de comando), el que viene viene con Git. Para hacer eso, tienes que ir a la terminal y agregar uno de los siguientes comandos para ver las ofertas de instalación del desarrollador:</p>
+<pre><code>git --version
+git config</code></pre>
+<p>Luego, ¡acepta la oferta! haciendo click en “Install”. O puedes pedir de forma directa la instalación con el siguiente comando:</p>
+<pre><code>xcode-select --install</code></pre>
+<p>Considera que quizás tendrás que re-hacer este proceso, si es que actualizas tu sistema macOS.</p>
+<p><strong>Opción 2:</strong> Instalarlo directo de la siguiente página web: <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a></p>
+<ul>
+<li><p>Esta opción te entregará el beneficio de que te dará la última versión disponible de Git.</p></li>
+<li><p>Más información sobre GitHub home para macOS, puede ser encontrada <a href="https://github.com/timcharper/git_osx_installer">aquí</a></p></li>
+</ul>
+<p><strong>Opción 3:</strong> Si anticipas que estarás trabajando con procesos computacionales altamente demandantes, estarás entonces instalando y actualizando muchos programas. Revisa entonces el “missins package manager for OS X” en la siguiente página web: <a href="https://brew.sh">https://brew.sh</a> Una vez que lo tengas instalado, agrega en el terminal el siguiente comando para instalar Git:</p>
+<pre><code>brew install git</code></pre>
+<p><strong>III. Instalar Git en Linux</strong></p>
+<p>Instala Git a través del administrador de paquetes de tu distribución (distro’s package manager):</p>
+<p>Ubuntu o Debian Linux:</p>
+<pre><code>sudo apt-get install git</code></pre>
+<p>Fedora o RedHat Linux:</p>
+<pre><code>sudo yum install git</code></pre>
+<p>Una lista completa para varios administradores de paquetes (package managers) de Linux y Unix la encuentras <a href="https://git-scm.com/download/linux">aquí</a></p>
+</div>
+<div id="preséntate-a-git" class="section level2">
+<h2><span class="header-section-number">4.4</span> Preséntate a Git</h2>
+<p>En la terminal de tu computador agrega:</p>
+<pre><code>git config --global user.name &#39;Jane Doe&#39;
+git config --global user.email &#39;jane@example.com&#39;
+git config --global --list</code></pre>
+<p>Sustituye con tu nombre y el correo asociado a tu cuenta de GitHub. Otra opción es usar el paquete de R “usethis”, que te permite hacerlo en solo una línea:</p>
+<pre><code>## install.packages(&quot;usethis&quot;)
 
+library(usethis)
+use_git_config(user.name = &quot;Jane Doe&quot;, user.email = &quot;jane@example.org&quot;)</code></pre>
+<p><strong>Más sobre la configuración de Git</strong></p>
+<p>Otra forma de acceder al terminal es desde RStudio, apretar en “Tools”, y después hacer click en “Terminal” (o a veces dice “Shell”).</p>
+<p>Considera que si estás usando Windows, a veces eso puede traer problemas con el terminal que estás usando ya que Windows poseen varios. Dado esto, asegúrate de que estás usando la terminal “Git Bash”. Esto puede ser más fácil de resolver si realizas la configuración de Git usando el paquete de R <code>usethis</code>.</p>
+<p>El nombre de usuario usado en Git no debe ser necesariamente el mismo de tu cuenta de GitHub. Aunque si quieres, puede ser así. Otra buena opción es tu nombre y tu apellido. Si es que haces commit desde distintas maquinas, a veces la gente usa esa información como el nombre de usuario. Los commits tendrán este nombre, por lo que asegúrate de que sea informativo para futuras posibles colaboraciones.</p>
+<p>Es importante considerar que el correo que usas para Git <strong>TIENE QUE SER EL MISMO DE TU CUENTA GitHub</strong>.</p>
+<p>Si estos comandos no te entregan ninguna respuesta, puedes revisar si Git entendió lo que necesitabas, escribiendo <code>git config --global --list</code>.</p>
+<p><strong>Configura el editor de Git</strong></p>
+<p>Otra opción de Git que muchas personas eventualmente configuran es el editor. En algún momento, no le darás a Git lo que requiere en los commits y te enviará a un editor. Esto puede ser angustiante si no es el editor de tu elección y ni siquiera sabes cómo guardar y salir de él.</p>
+<p>Puedes forzar el que necesitas escribiendo algo como esto:</p>
+<pre><code>git config --global core.editor &quot;emacs&quot;</code></pre>
+<p>Sustituye tu editor por “emacs” allí.</p>
+<p>En la siguiente <a href="http://swcarpentry.github.io/git-novice/02-setup/">página web</a> puedes encontrar una lista completa de los comandos exactos usados por <code>git config</code>, que pueden ser útiles para muchas combinaciones entre el Sistema Operativo y el editor.</p>
+
+</div>
 </div>
             </section>
 
